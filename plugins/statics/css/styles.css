@@ -1,0 +1,59 @@
+body{
+    background: ghostwhite;
+}
+
+.homepage{
+    height: 80vh;
+    background-image: url("../images/home-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.welcomeText{
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.welcomeText > h4{
+    top: 325px;
+    left: 52px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 100.39px;
+    mix-blend-mode: hard-light;
+}
+
+.welcomeText > h4:hover{
+    font-size: 3.3rem;
+}
+
+.welcomeText > h5{
+    font-size: 1.3rem;
+    mix-blend-mode: hard-light;
+}
+
+.button-section{
+    margin-top: -1rem;
+    display: flex;
+}
+
+.btn{
+    padding: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 151px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btn-primary{
+    background: blue;
+}
+.btn-danger{
+    background: red;
+}

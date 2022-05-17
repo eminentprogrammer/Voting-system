@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="homepage">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="welcomeText">
+                    <h4> Vote </h4>
+                    <h5> LET YOUR VOICE BE HEARD </h5>   
+                </div>     
+            </div>
+        </div>
+    </div>
+</div>
+<div class="button-section">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <a href="{% url 'signup' %}" class="btn btn-md btn-danger">Signup</a>
+            </div>
+            <div class="col">
+                <a href="{% url 'login_view' %}" class="btn btn-md btn-primary">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

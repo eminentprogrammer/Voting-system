@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrastyles %}
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="signup-page">
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center"> Signup Page</h4>
+        </div>
+        <div class="row">
+            <div class="col-10  col-md-6 mx-auto account-form">
+                <form action="" class="form" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" class="btn btn-md btn-primary rounded fw-bold" value="Submit">
+                </form>
+                <hr>
+                <span class="alert text-warning">
+                    Already register,<a class="m-2 fw-bold" href="{% url 'login_view' %}">login Here</a>
+                </span>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}
